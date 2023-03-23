@@ -9,7 +9,7 @@ void print_square(int size)
 {
 	int sq;
 	int x;
-	
+
 	if (size <= 0)
 	{
 		putchar('\n');
