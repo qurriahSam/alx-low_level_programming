@@ -1,5 +1,4 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
 * print_line - draws a straight line in the terminal.
 * @n: input number of times to print '_'
