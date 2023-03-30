@@ -1,4 +1,4 @@
-# PROJECT 0x04. C - More functions, more nested loops
+# 0x04. C - More functions, more nested loops
 
 ```
 main.h file is the header file containing all the function prototypes used in this project.
