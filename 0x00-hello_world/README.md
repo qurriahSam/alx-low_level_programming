@@ -34,15 +34,4 @@
   * [6-size.c](./6-size.c): C program that prints the size of various types on the computer
   it is compiled and run on.
 
-* **7. Intel**
-  * [100-intel](./100-intel): Script that generates the assembly code in Intel syntax of a
-  C file saved in the variable $CFILE; saves the result in an output file of the same name
-  but with a `.s` extension.
-    * Example: If the C file is `main.c`, the output is `main.s`.
-
-* **8. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity**
-  * [101-quote.c](./101-quote.c): C program that prints exactly `and that piece of art is
-  useful" - Dora Korpar, 2015-10-19`, followed by a new line, to the standard error,
-  without using any functions listed in the NAME sesction of the man(3) `printf` or man(3)
-  `puts`.
   ***
