@@ -1,6 +1,6 @@
 # ALX Low Level Programming
-## This repository contains `ALX-T` C projects and other low level programming exercices.
 
+The contents of this repository are geared towards enhancing programming proficiency, specifically in C programming, and encompass various low-level programming exercises. The exercises are derived from the `ALX program` and are designed to sharpen problem-solving skills and deepen understanding of programming concepts.
 
 # Content
 Directory | Files
