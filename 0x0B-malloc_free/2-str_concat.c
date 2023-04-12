@@ -1,73 +1,49 @@
 #include <stdlib.h>
+#include "main.h"
 
-int strlength(char *s1);
 /**
- * *str_concat - concantenates two strings
+ * *str_concat - concatenates two strings
+ * @s1: string to concatenate
+ * @s2: other string to concatenate
  *
- * @s1: string 1
- * @s2: string 2
- *
- * Return: Null on failure a new string otherwise
+ * Return: pointer to the new string created (Success), or NULL (Error)
  */
-
 char *str_concat(char *s1, char *s2)
 {
-	int i;
-	int j;
-	int length1;
-	int length2;
-	int length_conc;
-	char *concat;
+	char *s3;
+	unsigned int i = 0, j = 0, len1 = 0, len2 = 0;
 
-	if (s1 == NULL)
-	{
-		length1 = 1;
-	}
-	else
-	{
-		length1 = strlength(s1);
-	}
-	if (s2 == NULL)
-	{
-		length2 = 1;
-	}
-	else
-	{
-	length2 = strlength(s2);
-	}
-	length_conc = (length1 + 1) + (length2);
-	concat = malloc(sizeof(char) * length_conc);
-	if (concat == 0)
-	{
-		return (0);
-	}
-	for (i = 0; i <= length1; i++)
-	{
-		concat[i] = s1[i];
-	}
-	for (j = 0, i = length1; j <= length2; j++, i++)
-	{
-		concat[i] = s2[j];
-	}
-	concat[length_conc] = '\0';
-	return (concat);
-}
-/**
- * strlength - checks length of string
- *
- * @s1:string of interest
- *
- * Return: length
- */
-int strlength(char *s1)
-{
-	int length;
-	int i;
+	while (s1 && s1[len1])
+		len1++;
+	while (s2 && s2[len2])
+		len2++;
 
-	length = 0;
-	for (i = 0; s1[i] != '\0'; i++)
+	s3 = malloc(sizeof(char) * (len1 + len2 + 1));
+	if (s3 == NULL)
+		return (NULL);
+
+	i = 0;
+	j = 0;
+
+	if (s1)
 	{
-		length++;
+		while (i < len1)
+		{
+			s3[i] = s1[i];
+			i++;
+		}
 	}
-	return (length);
+
+	if (s2)
+	{
+		while (i < (len1 + len2))
+		{
+			s3[i] = s2[j];
+			i++;
+			j++;
+		}
+	}
+	s3[i] = '\0';
+
+	return (s3);
 }
