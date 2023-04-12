@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
- * *_strcop - returns a pointer coplicate of string
+ * *_strdup - returns a pointer coplicate of string
  *
  * @str: String to be coplicated
  *
